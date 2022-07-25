@@ -1,0 +1,144 @@
+.normal {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: .3s;
+    color: blue;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a:hover {
+        path: white
+    }
+}
+
+.normal[aria-current] {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    color: #fe4d44;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    pah {
+        fill: red
+    }
+
+    ::after {
+        content : "";
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color:  #fd4d44;
+        left: 0;
+        top: 0; 
+    }
+}
+
+.normal:hover {
+    path{
+        fill: #ddd;
+    }
+}
+
+.linkOpen {
+    height: 50px;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    gap: 15px;
+    transition-duration: .3s;
+
+
+
+
+    p{
+        color: #8f8f8f;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+.linkOpen[aria-current] {
+    position: relative;
+    height: 50px;
+    padding-left: 25px;
+    align-items: center;
+    gap: 16px;
+    transition-duration:  .3s;
+    background-color: #1f1f1f;
+
+
+    path {
+        fill: #fe4f44;
+    }
+
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color: #fe4d44;
+        left: 0;
+        top: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    p{
+        color: #fe4d44;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+}
+
+.linkOpen:hover {
+    p {
+        color: white;
+    }
+
+    path {
+        fill: white;
+    }
+}
+
+
+i {
+    margin-top: 10px;
+    font-size: 30px;
+    color: gray;
+}
